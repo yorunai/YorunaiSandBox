@@ -19,18 +19,13 @@ int ModelTestCl::columnCount(const QModelIndex &/*parent = QModelIndex()*/)const
 
 QVariant ModelTestCl::data(const QModelIndex &index, int role) const
 {
-	if(role == Qt::DisplayRole)
+	if (role == Qt::DisplayRole)
 	{
-	return 2;
+		return 2;
 	}
 	return QVariant();
 }
 /*
-QModelIndex QAbstractItemModel::parent(const QModelIndex &index) const
-{
-
-}
-
  virtual int rowCount(const QModelIndex &parent = QModelIndex()) const = 0;
  virtual int columnCount(const QModelIndex &parent = QModelIndex()) const = 0;
  virtual bool hasChildren(const QModelIndex &parent = QModelIndex()) const;
